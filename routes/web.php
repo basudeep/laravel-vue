@@ -25,4 +25,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/posts', 'PostController@all_posts');
+// Route::get('/posts', 'PostController@all_posts');
+
+// Route::get('/{anypath}', 'HomeController@index')->where('path','.*');
+
+
+
+
+//Category 
+Route::post('/add-category', 'CategoryController@add_category');
+Route::get('/categories', 'CategoryController@all_category');
+Route::get('/category/{id}', 'CategoryController@delete_category');
+Route::get('/edit-category/{id}', 'CategoryController@edit_category');
+Route::post('/update-category/{id}', 'CategoryController@update_category');
