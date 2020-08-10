@@ -30,7 +30,7 @@
                   <td>{{ category.created_at | timeformat }}</td>
                   <td> 
                       <router-link :to='`/category-edit/${category.id}`'   class="btn btn-warning">Edit</router-link>
-                      <a @click.prevent ="deleteCategory(category.id)" class="btn btn-danger">Delete</a>
+                      <a @click.prevent ="deleteCategory(category.id)" class="btn btn-danger text-light">Delete</a>
                   </td>
                 </tr>
                 </tbody>
@@ -60,7 +60,6 @@ export default {
   },  
   methods:{
     deleteCategory(id){
-
     Swal.fire({
     title: 'Are you sure?',
     text: "You won't be able to revert this!",

@@ -93,9 +93,9 @@
       </div><!-- /.container-fluid -->
       
     </section>
-    <section class="content">
+    
       <admin-main></admin-main>
-    </section>
+   
   </div>
 
   </div>

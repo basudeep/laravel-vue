@@ -1,0 +1,24 @@
+td.image {
+    height: 180px;
+}
+
+td.image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+/* Post Add */
+.image-uploaded {
+    position: relative;
+}
+
+.image-uploaded p {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    left: 80px;
+    background: red;
+    padding: 0 5px;
+    cursor: pointer;
+}
